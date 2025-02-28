@@ -1,0 +1,82 @@
+.chatContainer {
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    padding: 20px;
+  }
+  
+  .chatHeader
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}  
+  .messagesContainer {
+    flex: 1;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #a4b6b0;
+    border-radius: 8px;
+
+        display: flex;
+        flex-direction: column; /* Чтобы сообщения шли по вертикали */
+        align-items: flex-start; /* Сообщения будут выравниваться по левому краю по умолчанию */
+  }
+  
+  
+  
+  .myMessage {
+    background-color: #d3f9d8; /* Цвет фона для сообщений текущего пользователя */
+    align-self: flex-end; /* Выравнивание сообщения по правому краю */
+        padding: 0 10px;
+        border-radius: 40px;
+        max-width: 70%;
+        margin-top: 10px;
+  }
+  
+  .otherMessage {
+    background-color: #f0f0f0; /* Цвет фона для сообщений других пользователей */
+    align-self: flex-start; /* Выравнивание сообщения по левому краю */
+        border-radius: 40px;
+        max-width: 70%;
+        padding: 0 10px;
+        margin-top: 10px;
+  }
+  
+  .inputContainer {
+    display: flex;
+    gap: 10px;
+  }
+  
+  input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #618476;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color:  #4e645c;
+  }
+
+  .chatTitle {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 0px;
+    color: #ccc;
+    text-align: center;
+    max-width: 80%;
+    overflow: hidden;
+  }
+

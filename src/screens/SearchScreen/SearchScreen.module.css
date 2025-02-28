@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap");
+
+.searchContent {
+  background-color: rgb(98, 119, 98);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-radius: 10px;
+  height: 100vh;
+  padding-top: 5px;
+}
+
+.searchHeader {
+  color: white;
+  filter: drop-shadow(2px 2px 2px black);
+  font-size: 36px;
+  text-align: center;
+  background-color: rgb(40, 59, 47);
+  margin: 0;
+  border-radius: 10px;
+  padding: 15px;
+  font-family: "Slabo 27px", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.searchHeader h2 {
+  margin: 0;
+}
+
+.searchHeader input {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(100, 120, 100);
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  margin: 0;
+  width: 60%;
+  font-size: 20px;
+  font-family: "Slabo 27px", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.searchHeader input::placeholder {
+  color: rgb(100, 120, 100);
+  font-size: 16px;
+  font-family: "Slabo 27px", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.searchHeader input:focus {
+  outline: none;
+  border-color: rgb(100, 120, 100);
+}
+
+.searchHeader svg {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 90px;
+  right: auto;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.searchHeader svg:hover {
+  fill: rgb(137, 137, 137);
+  transform: scale(1.05);
+}
+
+.searchHeader svg:active {
+  fill: rgb(137, 137, 137);
+  transform: scale(1.15);
+}
+
+.searchHeader .backArrow {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 90px;
+  left: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Раздвигаем содержимое по сторонам */
+  padding: 10px 20px; /* Добавим отступы для более симметричного вида */
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: rgb(46, 47, 47);
+  color: white;
+  filter: drop-shadow(2px 2px 2px black);
+  font-size: 20px;
+}
+
+.displayName {
+  font-weight: bold; /* Делаем текст жирным */
+  font-size: 22px; /* Увеличиваем размер текста */
+  color: #c5c6c8; /* Добавим красивый голубоватый оттенок */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Лёгкая тень для текста */
+}
+
+.user button {
+  margin-left: auto; /* Отодвигаем кнопку в правую сторону */
+  padding: 8px 15px; /* Увеличим размер кнопки */
+  background-color: #5e6b6f6e; /* Яркий цвет кнопки для контраста */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.user button:hover {
+  background-color: #e64a19; /* Более тёмный оттенок при наведении */
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal button {
+  padding: 10px;
+  border: none;
+  background-color: #586a59;
+  color: white;
+  cursor: pointer;
+  margin: 5px 0;
+  border-radius: 10px;
+
+}
+
+.modal button:hover {
+  background-color: #374637;
+}
+
+.modalTitle{
+  color: rgb(100, 120, 100);
+  font-size: 22px;
+  font-family: "Slabo 27px", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.modalButtons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}

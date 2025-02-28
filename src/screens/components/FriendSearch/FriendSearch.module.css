@@ -1,0 +1,12 @@
+.searchIcon {
+  height: 64px;
+  width: 64px;
+  margin-top: 3px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  fill: rgb(98, 119, 98);
+
+}
+.searchIcon:hover {
+  fill: rgb(55, 54, 54);
+}

@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Tsukimi+Rounded&display=swap");
+
+.Login {
+  background-color: rgb(35, 57, 48);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Tsukimi Rounded", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Login h1 {
+  color: white;
+  filter: drop-shadow(2px 2px 2px black);
+  font-size: 36px;
+}
+
+.Login p {
+  color: white;
+  filter: drop-shadow(2px 2px 2px black);
+  font-size: 20px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 3vh;
+}
+
+.inputs input {
+  background-color: rgb(197, 207, 203);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  filter: drop-shadow(2px 2px 2px black);
+  outline: none;
+}
+
+.LoginButton {
+  background-color: rgb(124, 141, 134);
+  color: rgb(35, 57, 48);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  margin-top: 2vh;
+  filter: drop-shadow(2px 2px 2px black);
+}
+
+.LoginButton:hover {
+  background-color: rgb(21, 21, 21);
+  color: white;
+}
+
+.toRegistration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 2vh;
+  flex-direction: column;
+}
+
+.toRegistration p {
+  color: white;
+  filter: drop-shadow(2px 2px 2px black);
+  font-size: 20px;
+}
+
+.toRegistrationLink {
+  text-decoration: none;
+  color: rgb(124, 141, 134);
+  filter: drop-shadow(2px 2px 2px black);
+  font-size: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.toRegistrationLink:hover {
+  color: rgb(145, 145, 145);
+  transform: scale(1.05);
+}
+
+.toRegistrationButton {
+  background-color: rgb(124, 141, 134);
+  color: rgb(35, 57, 48);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  transition: background-color 0.3s, color 0.3s; /* добавим плавную анимацию */
+}
+
+.toRegistrationButton:hover {
+  background-color: rgb(21, 21, 21); /* темный цвет при наведении */
+  color: white; /* белый цвет текста */
+}
+
+h4 {
+  color: rgb(255, 0, 0);
+  filter: drop-shadow(2px 2px 2px black);
+  font-size: 20px;
+}

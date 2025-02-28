@@ -1,0 +1,21 @@
+.signOutIcon {
+  height: 64px;
+  width: 64px;
+  margin-top: 3px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  fill: rgb(98, 119, 98);
+  border-radius: 3px;
+  min-width: 64px;
+}
+.signOutIcon:hover {
+  fill: rgb(55, 54, 54);
+  background-color: rgb(75, 15, 15);
+  border-radius: 20px;
+}
+.signOutIcon:active {
+  fill: rgb(55, 54, 54);
+  background-color: rgb(75, 15, 15);
+  border-radius: 20px;
+  transform: scale(1.03);
+}

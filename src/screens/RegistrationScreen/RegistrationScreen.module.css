@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Tsukimi+Rounded&display=swap");
+
+.registration {
+  background-color: rgb(35, 57, 48);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Tsukimi Rounded", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.registration h1 {
+  color: white;
+  filter: drop-shadow(2px 2px 2px black);
+  font-size: 36px;
+}
+
+.registration p {
+  color: white;
+  filter: drop-shadow(2px 2px 2px black);
+  font-size: 20px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5vh;
+}
+
+.inputs input {
+  background-color: rgb(197, 207, 203);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  filter: drop-shadow(2px 2px 2px black);
+  outline: none;
+}
+
+.registrationButton {
+  background-color: rgb(124, 141, 134);
+  color: rgb(35, 57, 48);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  margin-top: 2vh;
+  filter: drop-shadow(2px 2px 2px black);
+}
+
+.registrationButton:hover {
+  background-color: rgb(21, 21, 21);
+  color: white;
+}
+
+.toLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+  flex-direction: column;
+}
+
+.toLoginLink {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.toLoginLink:hover {
+  color: rgb(145, 145, 145);
+  transform: scale(1.06);
+}
+
+.toLoginButton {
+  background-color: rgb(124, 141, 134);
+  color: rgb(35, 57, 48);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  filter: drop-shadow(2px 2px 2px black);
+}
+
+.toLoginButton:hover {
+  background-color: rgb(21, 21, 21);
+  color: white;
+}

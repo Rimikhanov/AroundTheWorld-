@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Tsukimi+Rounded&display=swap");
+
+body {
+  background-color: rgb(14, 14, 14);
+}
+.title {
+  color: white;
+  filter: drop-shadow(2px 2px 2px black);
+  font-size: 36px;
+  text-align: center;
+  background-color: rgb(40, 59, 47);
+  margin: 0;
+  border-radius: 10px;
+  padding: 15px;
+  font-family: "Tsukimi Rounded", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.chatList {
+  background-color: rgb(98, 119, 98);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-radius: 10px;
+  height: 100vh;
+  padding-top: 5px;
+}
+
+.chatItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgb(75, 84, 75);
+  transition: background-color 0.3s ease;
+  border-radius: 20px;
+  margin: 20px 10px;
+  font-family: "Tsukimi Rounded", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.chatLink {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chatLink h3 {
+  margin: 0;
+  text-align: left;
+  font-size: 28px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 15px;
+
+  text-overflow: ellipsis;
+}
+
+.chatLink .lastMessage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  color: rgb(203, 203, 203);
+  font-size: 14px;
+  margin: 15px;
+}
+
+.chatLink .lastMessage p {
+  margin: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  font-size: 24px;
+}
+
+.chatLink .lastMessage small {
+  margin: 0;
+  flex-shrink: 0;
+  margin-right: 20px;
+  text-align: right;
+  white-space: nowrap;
+  color: rgb(150, 150, 150);
+}
+.header {
+  display: flex;
+  background-color: rgb(98, 119, 98);
+  border-radius: 10px;
+}
+
+.loading {
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  display: flex;
+  height: 100vh;
+  font-family: "Tsukimi Rounded", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  color: white;
+}
+
+.noChats {
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  display: flex;
+  height: 80vh;
+  font-family: "Tsukimi Rounded", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  color: white;
+}
+
+.error {
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  display: flex;
+  height: 80vh;
+  font-family: "Tsukimi Rounded", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  color: white;
+}
+
+
+/* Стили для загрузки */
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+.spinnerCircle {
+  stroke-dashoffset: 0;
+  animation: rotate 3s linear infinite;
+}
+
+/* Анимация вращения */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    stroke-dashoffset: 125.6;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Кнопка перезагрузки */
+.reloadButton {
+  background-color: rgb(98, 119, 98);
+
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.reloadButton:hover {
+ background-color: rgb(98, 119, 98);
+
+}
+
+.reloadButton svg {
+  margin-right: 10px;
+}
+.headerButtons {
+  display: flex;
+}
+@media (max-width: 600px) {
+  .header{
+    max-height: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
